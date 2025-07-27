@@ -22,7 +22,6 @@ class ScanLogController extends Controller
     public function index()
     {
         return ScanLogResource::collection(ScanLog::all());
-        //  return ScanLog::with('user')->get();
     }
 
     /**
@@ -178,12 +177,4 @@ class ScanLogController extends Controller
 
 }
 
-
-
-
-
-
-// $nowTime = Carbon::now('Asia/Riyadh')->format('H:i:s');
-
-// $logs = ScanLog::whereRaw("TIME(updated_at) = ?", [$nowTime])->get();
 
